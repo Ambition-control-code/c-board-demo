@@ -48,6 +48,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/System/Status.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_tick.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_gpio.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_exti.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_pwm.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_uart.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_spi.c
