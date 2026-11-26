@@ -1,0 +1,27 @@
+# ---- 构建产物 ----
+build/
+CMakeUserPresets.json
+*.elf
+*.bin
+*.hex
+*.map
+
+# ---- CubeMX / STM32CubeIDE 本机状态 ----
+.settings/
+.mxproject
+mx.scratch
+
+# ---- Keil MDK（切换到 Keil 工具链后才会生成） ----
+MDK-ARM/
+*.uvguix.*
+*.uvoptx
+
+# ---- 本机工具链 / agent 数据 ----
+.agents/
+
+# ---- 操作系统与编辑器临时文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
+*.swp
