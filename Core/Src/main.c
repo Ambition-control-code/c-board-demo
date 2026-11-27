@@ -29,7 +29,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bsp_gpio.h"
+#include "bsp_pwm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -108,6 +109,14 @@ int main(void)
   MX_TIM8_Init();
   MX_TIM10_Init();
   /* USER CODE BEGIN 2 */
+
+  //bsp_init
+  BSP_GPIO_Set(BSP_GPIO_BMI088_ACCEL_CS,1);
+  BSP_GPIO_Set(BSP_GPIO_BMI088_GYRO_CS,1);
+
+  BSP_PWM_Start(BSP_PWM_TIM5_CH1);
+  BSP_PWM_Start(BSP_PWM_TIM5_CH2);
+  BSP_PWM_Start(BSP_PWM_TIM5_CH3);
 
   /* USER CODE END 2 */
 

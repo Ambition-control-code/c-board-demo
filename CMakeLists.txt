@@ -54,6 +54,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_spi.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_can.c
     ${CMAKE_CURRENT_SOURCE_DIR}/BSP/bsp_usb.c
+     ${CMAKE_CURRENT_SOURCE_DIR}/APP/led_task.c
 )
 
 # Add include paths
